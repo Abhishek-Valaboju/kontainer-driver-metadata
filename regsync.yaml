@@ -141,6 +141,7 @@ sync:
         - v1.14.1-build20260206
         - v1.14.2-build20260310
         - v1.14.2-build20260416
+        - v1.14.3-build20260506
         - v1.9.3-build20220613
         - v1.9.3-build20221011
   - source: docker.io/rancher/hardened-csi-snapshotter
@@ -175,6 +176,7 @@ sync:
         - 1.26.7-build20260206
         - 1.26.7-build20260310
         - 1.26.8-build20260416
+        - 1.26.8-build20260506
   - source: docker.io/rancher/hardened-etcd
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/hardened-etcd'
     type: repository
@@ -421,6 +423,7 @@ sync:
         - v1.35.3-rke2r1-build20260319
         - v1.35.3-rke2r3-build20260407
         - v1.35.4-rke2r1-build20260416
+        - v1.36.0-rke2r1-build20260429
   - source: docker.io/rancher/hardened-multus-cni
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/hardened-multus-cni'
     type: repository
@@ -555,6 +558,7 @@ sync:
         - v3.5.4-build20251103
         - v3.6.10-build20260309
         - v3.6.13-build20260416
+        - v3.6.16-build20260506
         - v3.6.4-build20251208
         - v3.6.7-build20260115
         - v3.6.7-build20260206
@@ -1501,6 +1505,7 @@ sync:
         - v1.33.0
         - v1.34.0
         - v1.35.0
+        - v1.36.0
   - source: docker.io/rancher/mirrored-cloud-provider-vsphere-cpi-release-manager
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/mirrored-cloud-provider-vsphere-cpi-release-manager'
     type: repository
@@ -1844,6 +1849,7 @@ sync:
         - v1.35.0-rc1.0.20251218152248-a6c6cd15c0c4-build20251219
         - v1.35.1-0.20260211145923-50fa2d70c239-build20260211
         - v1.35.4-0.20260415195656-e51c0636351d-build20260415
+        - v1.36.0-rc2.0.20260427154526-d239025e2a23-build20260429
   - source: docker.io/rancher/rke2-runtime
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rke2-runtime'
     type: repository
@@ -2127,6 +2133,8 @@ sync:
         - v1.35.3-rke2r3-windows-amd64
         - v1.35.4-rke2r1
         - v1.35.4-rke2r1-windows-amd64
+        - v1.36.0-rc3-rke2r1
+        - v1.36.0-rc3-rke2r1-windows-amd64
   - source: docker.io/rancher/rke2-upgrade
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/rke2-upgrade'
     type: repository
@@ -2271,6 +2279,7 @@ sync:
         - v1.35.3-rke2r1
         - v1.35.3-rke2r3
         - v1.35.4-rke2r1
+        - v1.36.0-rc3-rke2r1
   - source: docker.io/rancher/system-agent-installer-k3s
     target: '{{ env "REGISTRY_ENDPOINT" }}/rancher/system-agent-installer-k3s'
     type: repository
@@ -2555,3 +2564,4 @@ sync:
         - v1.35.3-rke2r1
         - v1.35.3-rke2r3
         - v1.35.4-rke2r1
+        - v1.36.0-rc3-rke2r1
